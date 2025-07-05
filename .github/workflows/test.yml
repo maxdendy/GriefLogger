@@ -2,7 +2,7 @@ name: Run Tests
 
 on:
   push:
-    branches: [ "1.21.5-dev" ]
+    branches: [ "1.21.6-dev" ]
 
 permissions:
   contents: read
@@ -14,8 +14,8 @@ jobs:
     
     runs-on: ubuntu-latest
 
-    env:
-      CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+#    env:
+#      CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
 
     steps:
       - name: Checkout

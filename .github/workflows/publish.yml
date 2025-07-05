@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branches: [ "1.21.5" ]
+    branches: [ "1.21.6" ]
 
 permissions:
   contents: write
@@ -12,9 +12,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
-      MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
+#    env:
+#      CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+#      MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
 
     steps:
       - name: Checkout
